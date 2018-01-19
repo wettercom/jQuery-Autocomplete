@@ -348,6 +348,10 @@
                 styles.width = that.el.outerWidth() + 'px';
             }
 
+            if ($.isFunction(that.options.onPosition)) {
+                that.options.onPosition.call(that.element, $container, styles);
+            }
+
             $container.css(styles);
         },
 

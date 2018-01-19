@@ -51,7 +51,8 @@ $(selector).autocomplete(options);
 | `transformResult` | `function(response, originalQuery) {}` called after the result of the query is ready. Converts the result into response.suggestions format |
 | `onSelect` | `function (suggestion) {}` Callback function invoked when user selects suggestion from the list. `this` inside callback refers to input HtmlElement.|
 | `onSearchError` | `function (query, jqXHR, textStatus, errorThrown) {}` called if Ajax request fails. `this` is bound to input element |
-| `onShow` | `function (container, suggestions) {}` called directly after container has been shown |
+| `onShow` | `function (container) {}` called directly after container has been shown |
+| `onPosition` | `function (container, styles) {}` called before the position of the container is applied |
 | `onHide` | `function (container) {}` called before container will be hidden |
 
 
