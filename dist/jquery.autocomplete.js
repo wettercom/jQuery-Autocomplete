@@ -685,6 +685,10 @@
             that.fixPosition();
             container.show();
 
+            if ($.isFunction(that.options.onShow) && ! that.visible) {
+                that.options.onShow.call(that.element, container);
+            }
+
             // Select first value by default:
             if (options.autoSelectFirst) {
                 that.selectedIndex = 0;
