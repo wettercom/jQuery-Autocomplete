@@ -12,7 +12,7 @@
     "url": "git://github.com/wettercom/jQuery-Autocomplete.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "@types/jquery": "^2.0.32",
